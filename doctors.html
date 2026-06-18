@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet our expert dental team at SmileCare Dental Clinic. Read about our specialists' credentials, experience, and book your consultation.">
+    <title>Meet Our Doctors - SmileCare Dental Clinic</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6.4.0 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Page Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">
+            <i class="fa-solid fa-tooth"></i> SmileCare
+        </div>
+        <div class="preloader-spinner"></div>
+    </div>
+
+    
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-tooth"></i> Smile<span>Care</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-cta"><button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 10px 22px; font-size: 14px;">Book Now</button></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Doctors Hero Section -->
+    <div class="page-intro" style="background: url('https://i.pinimg.com/736x/69/0d/e7/690de791a5b0ae03797a9b68d596a74f.jpg') center/cover no-repeat;">
+        <div class="doctors-hero-overlay"></div>
+        <div class="page-intro-content" style="position: relative; z-index: 2;">
+            <span class="section-badge" style="background: rgba(13, 148, 136, 0.2); color: #fff; border-color: rgba(255,255,255,0.3);">Our Specialists</span>
+            <h1>Meet Our Expert Dental Team</h1>
+            <p style="color: #cbd5e1;">A dedicated group of certified clinical professionals blending clinical excellence with patient-focused care to restore your smile.</p>
+           
+        </div>
+    </div>
+
+    <!-- Doctor Profile Cards Section -->
+    <section class="reveal">
+        <div class="section-header">
+            <span class="section-badge">Medical Staff</span>
+            <h2 class="section-title">SmileCare's <span>Specialist Board</span></h2>
+            <p class="section-subtitle">Click "View Profile" to view in-depth academic credentials, treatments provided, and patient care philosophies.</p>
+        </div>
+
+        <div class="doctors-redesign-grid">
+            <!-- Doctor 1: Dr. John Smith -->
+            <div class="doc-premium-card">
+                <div class="doc-img-circle-wrap">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80" alt="Dr. John Smith" class="doc-img-circle" style="object-position: center;">
+                </div>
+                <h3>Dr. John Smith</h3>
+                <div class="doc-title-tag">Senior Dental Specialist</div>
+                
+                <div class="doc-badge-grid">
+                    <span class="doc-badge-item">BDS, MDS</span>
+                    <span class="doc-badge-item">10+ Years Exp</span>
+                </div>
+                
+                <p class="doc-bio-text">Dedicated to aesthetic smile layouts and complex root canal procedures, prioritizing patient comfort and structural safety.</p>
+                
+                <div class="doc-social-circles">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <div class="doc-card-buttons">
+                    <a href="#details-smith" class="btn btn-outline" style="width: 100%; font-size: 13.5px; padding: 10px 0;">View Profile</a>
+                    <button onclick="openAppointmentPopup()" class="btn btn-primary" style="width: 100%; font-size: 13.5px; padding: 10px 0;"><i class="fa-regular fa-calendar-check"></i> Consultation</button>
+                </div>
+            </div>
+
+            <!-- Doctor 2: Dr. Sarah Johnson -->
+            <div class="doc-premium-card">
+                <div class="doc-img-circle-wrap">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80" alt="Dr. Sarah Johnson" class="doc-img-circle">
+                </div>
+                <h3>Dr. Sarah Johnson</h3>
+                <div class="doc-title-tag">Senior Orthodontist</div>
+                
+                <div class="doc-badge-grid">
+                    <span class="doc-badge-item">DDS, MDS</span>
+                    <span class="doc-badge-item">12+ Years Exp</span>
+                </div>
+                
+                <p class="doc-bio-text">Dedicated to correcting bites, tooth crowding, and jaw alignments in children and adults using customized aligners and ceramic braces.</p>
+                
+                <div class="doc-social-circles">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <div class="doc-card-buttons">
+                    <a href="#details-johnson" class="btn btn-outline" style="width: 100%; font-size: 13.5px; padding: 10px 0;">View Profile</a>
+                    <button onclick="openAppointmentPopup()" class="btn btn-primary" style="width: 100%; font-size: 13.5px; padding: 10px 0;"><i class="fa-regular fa-calendar-check"></i> Consultation</button>
+                </div>
+            </div>
+
+            <!-- Doctor 3: Dr. Marcus Chen -->
+            <div class="doc-premium-card">
+                <div class="doc-img-circle-wrap">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Dr. Marcus Chen" class="doc-img-circle" style="object-position: top;">
+                </div>
+                <h3>Dr. Marcus Chen</h3>
+                <div class="doc-title-tag">Implantology Specialist</div>
+                
+                <div class="doc-badge-grid">
+                    <span class="doc-badge-item">DDS, Fellow ICOI</span>
+                    <span class="doc-badge-item">15+ Years Exp</span>
+                </div>
+                
+                <p class="doc-bio-text">Specializes in restoring missing teeth foundations, sinus lifts, and full mouth dental implant bridges with advanced digital guides.</p>
+                
+                <div class="doc-social-circles">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <div class="doc-card-buttons">
+                    <a href="#details-chen" class="btn btn-outline" style="width: 100%; font-size: 13.5px; padding: 10px 0;">View Profile</a>
+                    <button onclick="openAppointmentPopup()" class="btn btn-primary" style="width: 100%; font-size: 13.5px; padding: 10px 0;"><i class="fa-regular fa-calendar-check"></i> Consultation</button>
+                </div>
+            </div>
+
+            <!-- Doctor 4: Dr. Emily Taylor -->
+            <div class="doc-premium-card">
+                <div class="doc-img-circle-wrap">
+                    <img src="https://i.pinimg.com/736x/f1/1c/a2/f11ca206ea93d2d648e6dab28f3a9859.jpg" alt="Dr. Emily Taylor" class="doc-img-circle">
+                </div>
+                <h3>Dr. Emily Taylor</h3>
+                <div class="doc-title-tag">Cosmetic Dentist</div>
+                
+                <div class="doc-badge-grid">
+                    <span class="doc-badge-item">DDS, AACD</span>
+                    <span class="doc-badge-item">9+ Years Exp</span>
+                </div>
+                
+                <p class="doc-bio-text">Crafts natural smile designs using ultra-thin porcelain veneers, composite restoration bonding, and clinical bleaching therapy.</p>
+                
+                <div class="doc-social-circles">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <div class="doc-card-buttons">
+                    <a href="#details-taylor" class="btn btn-outline" style="width: 100%; font-size: 13.5px; padding: 10px 0;">View Profile</a>
+                    <button onclick="openAppointmentPopup()" class="btn btn-primary" style="width: 100%; font-size: 13.5px; padding: 10px 0;"><i class="fa-regular fa-calendar-check"></i> Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Details Section (In-Depth Credentials Grid) -->
+    <section class="doc-details-block reveal" id="doctor-details">
+        <div class="section-header">
+            <span class="section-badge">Credentials Detail</span>
+            <h2 class="section-title">Clinical Background <span>& Focus Areas</span></h2>
+            <p class="section-subtitle">Read about our doctors' academic degrees, fellowships, achievements, and patient-first medical practices.</p>
+        </div>
+
+        <div class="doc-details-container">
+            <!-- Row 1: Dr. John Smith -->
+            <div class="doc-detail-row" id="details-smith">
+                <div class="doc-detail-visual">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80" alt="Dr. John Smith" class="doc-detail-round-img">
+                    <h4>Dr. John Smith</h4>
+                    <p>Senior Dental Specialist</p>
+                </div>
+                <div class="doc-info-credentials">
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-graduation-cap"></i> Education & Academic Background</h5>
+                        <p>Completed his Bachelor of Dental Surgery (BDS) and Master of Dental Surgery (MDS) at the University of Pennsylvania, with specialized focus on restorative endodontics and aesthetics.</p>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-brain"></i> Clinical Expertise & Achievements</h5>
+                        <p>Over 10 years of dental surgery experience. Board certified in aesthetic prosthodontics. Recognized for clinical excellence in surgical extractions and complicated crown procedures.</p>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid font-awesome-icon fa-briefcase-medical"></i> Treatments Provided</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-chevron-right"></i> Advanced root canal interventions</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Cosmetic smile design reconstructions</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Complex dental extraction surgeries</li>
+                        </ul>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-heart-pulse"></i> Patient Care Philosophy</h5>
+                        <p>"My duty is to restore function while prioritizing patient comfort. Every procedure is a partnership built on transparency, safety, and absolute precision."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Dr. Sarah Johnson -->
+            <div class="doc-detail-row" id="details-johnson">
+                <div class="doc-detail-visual">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80" alt="Dr. Sarah Johnson" class="doc-detail-round-img">
+                    <h4>Dr. Sarah Johnson</h4>
+                    <p>Senior Orthodontist</p>
+                </div>
+                <div class="doc-info-credentials">
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-graduation-cap"></i> Education & Academic Background</h5>
+                        <p>Completed her Doctor of Dental Surgery (DDS) at the University of Michigan, followed by an intensive 3-year Master of Dental Science (MDS) residency focusing strictly on Craniofacial Orthodontics.</p>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-brain"></i> Clinical Expertise & Achievements</h5>
+                        <p>Board-certified by the American Board of Orthodontics. Recognized Invisalign Diamond Provider. Specialist in correcting skeletal anomalies and interceptive orthodontic therapies for children.</p>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-briefcase-medical"></i> Treatments Provided</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-chevron-right"></i> Invisible Clear Aligners (Invisalign)</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Custom ceramic and self-ligating braces</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Myofunctional appliances & growth guidance</li>
+                        </ul>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-heart-pulse"></i> Patient Care Approach</h5>
+                        <p>"I believe alignment is not just about aesthetics; it is about functional balance. We design treatments to align your bite while ensuring structural safety and comfort at every follow-up."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: Dr. Marcus Chen -->
+            <div class="doc-detail-row" id="details-chen">
+                <div class="doc-detail-visual">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Dr. Marcus Chen" class="doc-detail-round-img">
+                    <h4>Dr. Marcus Chen</h4>
+                    <p>Implantology Specialist</p>
+                </div>
+                <div class="doc-info-credentials">
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-graduation-cap"></i> Education & Academic Background</h5>
+                        <p>Earned his DDS degree from Columbia University. Completed a Fellowship program in Implantology at the International Congress of Oral Implantologists (ICOI).</p>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-brain"></i> Clinical Expertise & Achievements</h5>
+                        <p>Pioneered computer-guided, minimally invasive surgical guides in the clinic. Over 3,000 successful implant placements. Active author in clinical implant journals.</p>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-briefcase-medical"></i> Treatments Provided</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-chevron-right"></i> Single-tooth titanium dental implants</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> All-on-4 / All-on-6 full arch reconstructions</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Sinus lifts, bone augmentations, and gum grafts</li>
+                        </ul>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-heart-pulse"></i> Patient Care Approach</h5>
+                        <p>"Losing a tooth can impact a patient's self-esteem and health. My goal is to use advanced technology to restore your natural chewing function and smile layout with minimal recovery times."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 4: Dr. Emily Taylor -->
+            <div class="doc-detail-row" id="details-taylor">
+                <div class="doc-detail-visual">
+                    <img src="https://i.pinimg.com/736x/f1/1c/a2/f11ca206ea93d2d648e6dab28f3a9859.jpg" alt="Dr. Emily Taylor" class="doc-detail-round-img">
+                    <h4>Dr. Emily Taylor</h4>
+                    <p>Cosmetic Dentist</p>
+                </div>
+                <div class="doc-info-credentials">
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-graduation-cap"></i> Education & Academic Background</h5>
+                        <p>Completed her Doctor of Dental Surgery (DDS) at NYU College of Dentistry. Completed specialized aesthetic residencies in prosthodontics and clinical smile makeup design.</p>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-brain"></i> Clinical Expertise & Achievements</h5>
+                        <p>Active member of the American Academy of Cosmetic Dentistry (AACD). Recipient of the New York State Aesthetic Dentistry Excellence Award. Expert in clinical enamel veneers and porcelain restorations.</p>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-briefcase-medical"></i> Treatments Provided</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-chevron-right"></i> Handcrafted ultra-thin porcelain veneers</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Custom cosmetic dental bonding</li>
+                            <li><i class="fa-solid fa-chevron-right"></i> Advanced clinical laser teeth whitening</li>
+                        </ul>
+                    </div>
+                    <div class="credential-block">
+                        <h5><i class="fa-solid fa-heart-pulse"></i> Patient Care Approach</h5>
+                        <p>"A beautiful smile should look completely natural. I work closely with patients to select shades and shapes that complement their facial structures, prioritizing long-term enamel strength."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Dentists Section -->
+    <section class="why-choose reveal">
+        <div class="section-header">
+            <span class="section-badge">Why SmileCare</span>
+            <h2 class="section-title">Why Trust <span>Our Dentists?</span></h2>
+            <p class="section-subtitle">We hold our clinical board to the highest academic, ethical, and hygienic dental standards.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-award"></i></div>
+                <h3>Experienced Professionals</h3>
+                <p>Our specialists have completed clinical fellowships and continuous academic training globally.</p>
+            </div>
+            
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3>Advanced Treatment Methods</h3>
+                <p>We utilize micro-endodontics, laser surgeries, and guided implant tech to ensure precision.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-users"></i></div>
+                <h3>Patient-Focused Care</h3>
+                <p>Every procedure is customized to accommodate dental fears, pain profiles, and scheduling needs.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-microscope"></i></div>
+                <h3>Modern Equipment</h3>
+                <p>From 3D scanners to low-radiation X-rays, our facility holds the latest medical certifications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Call-To-Action Section -->
+    <section class="cta-banner reveal">
+        <div class="cta-banner-content">
+            <h2>Ready to Consult with Our Specialists?</h2>
+            <p>Schedule your professional consultation online today. Our team is ready to deliver premium, painless dental procedures tailored to your unique requirements.</p>
+            <button onclick="openAppointmentPopup()" class="btn btn-white"><i class="fa-regular fa-calendar-check"></i> Book Consultation Now</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: var(--bg-white);">
+                    <i class="fa-solid fa-tooth" style="filter: brightness(1.2);"></i> Smile<span>Care</span>
+                </a>
+                <p class="footer-desc">SmileCare Dental Clinic delivers world-class dental procedures and customized care using premium medical technology and specialized procedures.</p>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                    <li><a href="doctors.html"><i class="fa-solid fa-chevron-right"></i> Doctors</a></li>
+                    <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Teeth Cleaning</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Teeth Whitening</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Root Canal</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Dental Implants</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Orthodontic Braces</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6;">Subscribe to our newsletter for health tips and clinic updates.</p>
+                <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                    <input type="email" placeholder="Your Email" required autocomplete="email">
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmileCare Dental Clinic. All rights reserved.</p>
+            <p>Developed with <i class="fa-solid fa-heart" style="color: #ef4444; font-size: 11px;"></i> for health care.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Go to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="whatsapp-float" id="whatsapp-btn" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </div>
+
+    <!-- Global Appointment Popup Modal -->
+    <div class="modal-overlay" id="appointment-popup-modal">
+        <div class="modal-box" style="text-align: left; max-width: 600px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <h3 style="margin: 0; color: var(--text-dark);"><i class="fa-regular fa-calendar-check" style="color: var(--secondary); margin-right: 8px;"></i> Book An Appointment</h3>
+                <span onclick="closeAppointmentPopup()" style="font-size: 28px; cursor: pointer; color: var(--text-muted); font-weight:300; line-height:1;">&times;</span>
+            </div>
+            <form class="appointment-page-form" id="popupBookingForm" onsubmit="handleBookingSubmit(event, true)">
+                <div class="form-group">
+                    <label for="popup-patientName">Patient Name *</label>
+                    <input type="text" id="popup-patientName" class="form-control" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientEmail">Email Address *</label>
+                    <input type="email" id="popup-patientEmail" class="form-control" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientPhone">Phone Number *</label>
+                    <input type="tel" id="popup-patientPhone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientAge">Patient Age *</label>
+                    <input type="number" id="popup-patientAge" class="form-control" placeholder="25" min="1" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-selectDoctor">Select Doctor *</label>
+                    <select id="popup-selectDoctor" class="form-control" required>
+                        <option value="First Available Specialist" selected>First Available Specialist</option>
+                        <option value="Dr. John Smith (Senior Dental Specialist)">Dr. John Smith (Senior Specialist)</option>
+                        <option value="Dr. Sarah Johnson (Senior Orthodontist)">Dr. Sarah Johnson (Orthodontist)</option>
+                        <option value="Dr. Marcus Chen (Implantology Specialist)">Dr. Marcus Chen (Implantologist)</option>
+                        <option value="Dr. Emily Taylor (Cosmetic Dentist)">Dr. Emily Taylor (Cosmetic Dentist)</option>
+                        <option value="Dr. Alex Mercer (Pediatric Specialist)">Dr. Alex Mercer (Pediatric Specialist)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-selectService">Select Treatment *</label>
+                    <select id="popup-selectService" class="form-control" required>
+                        <option value="" disabled selected>Choose a Treatment</option>
+                        <option value="General Dentistry">General Dentistry</option>
+                        <option value="Teeth Cleaning">Teeth Cleaning</option>
+                        <option value="Teeth Whitening">Teeth Whitening</option>
+                        <option value="Root Canal Treatment">Root Canal Treatment</option>
+                        <option value="Dental Implants">Dental Implants</option>
+                        <option value="Braces & Aligners">Braces & Aligners</option>
+                        <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                        <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                        <option value="Gum Treatment">Gum Treatment</option>
+                        <option value="Wisdom Tooth Removal">Wisdom Tooth Removal</option>
+                    </select>
+                </div>
+
+                <div class="form-group form-full">
+                    <label for="popup-appointmentDate">Preferred Appointment Date *</label>
+                    <input type="date" id="popup-appointmentDate" class="form-control" required>
+                </div>
+
+                <div class="form-group form-full">
+                    <label for="popup-patientMessage">Additional Message (Optional)</label>
+                    <textarea id="popup-patientMessage" class="form-control" placeholder="Share any symptoms or requirements with us..."></textarea>
+                </div>
+
+                <div class="form-group form-full" style="margin-top: 10px;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Booking Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-left">
+            <div class="announcement-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>Emergency Dental Care: +1 (555) 765-4321</span>
+            </div>
+            <div class="announcement-item">
+                <i class="fa-solid fa-clock"></i>
+                <span>Mon - Sat: 8:00 AM - 7:00 PM</span>
+            </div>
+        </div>
+        <div class="announcement-right">
+            <a href="#appointment" onclick="openAppointmentPopup(); return false;"><i class="fa-regular fa-calendar-check"></i> Schedule Appointment</a>
+        </div>
+    </div>
+
+    <!-- Booking Confirmation Modal (Shared Modal) -->
+    <div class="modal-overlay" id="confirm-modal-overlay">
+        <div class="modal-box">
+            <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Appointment Requested!</h3>
+            <p style="margin-bottom: 20px;">Thank you for booking with SmileCare. Here are your details:</p>
+            <div style="text-align: left; background: var(--bg-light); padding: 15px 20px; border-radius: 8px; margin-bottom: 25px; font-size: 13.5px; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 8px;">
+                <p style="margin:0;"><strong>Name:</strong> <span id="confirm-name" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Age:</strong> <span id="confirm-age" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Email:</strong> <span id="confirm-email" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Phone:</strong> <span id="confirm-phone" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Doctor:</strong> <span id="confirm-doctor" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Service:</strong> <span id="confirm-service" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Date:</strong> <span id="confirm-date" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Notes:</strong> <span id="confirm-message" style="color: var(--text-dark); font-style: italic;"></span></p>
+            </div>
+            <button onclick="closeConfirmModal()" class="btn btn-primary" style="width: 100%;">Got It, Thanks!</button>
+        </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="js/script.js"></script>
+</body>
+</html>

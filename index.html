@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmileCare Dental Clinic offers premium dental care using advanced technology. Book your appointment today with our experienced specialists.">
+    <title>SmileCare Dental Clinic - Healthy Smile, Happy Life</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6.4.0 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Page Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">
+            <i class="fa-solid fa-tooth"></i> SmileCare
+        </div>
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-tooth"></i> Smile<span>Care</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-cta"><button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 10px 22px; font-size: 14px;">Book Now</button></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+<section class="hero">
+    <div class="hero-content">
+
+        <div class="hero-left">
+            <span class="badge">
+                🦷 Trusted Dental Care Hospital
+            </span>
+
+            <h1>
+                Advanced Dental Care For Your
+                <span>Perfect Smile</span>
+            </h1>
+
+            <p>
+                Experience world-class dental treatments with our expert dentists.
+                From routine checkups to cosmetic dentistry, we provide
+                comfortable and affordable care for every patient.
+            </p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">
+                    Book Appointment
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>15+</h3>
+                    <span>Years Experience</span>
+                </div>
+
+                <div>
+                    <h3>10K+</h3>
+                    <span>Happy Patients</span>
+                </div>
+
+                <div>
+                    <h3>24/7</h3>
+                    <span>Support</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Dental Clinic">
+
+                <div class="floating-card">
+                    ⭐ 4.9 Rating
+                </div>
+
+                <div class="floating-card2">
+                    👨‍⚕️ Expert Doctors
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    
+
+    <!-- Trust Statistics Section -->
+    <section class="stats-section reveal" style="padding: 70px 0; background: var(--bg-white); border-bottom: 1px solid var(--border-color);">
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; padding: 0 20px;">
+            <!-- Stat 1 -->
+            <div class="stat-card">
+                <div style="font-size: 34px; color: var(--secondary); margin-bottom: 18px;"><i class="fa-solid fa-calendar-check"></i></div>
+                <h3 class="counter" data-target="15" data-suffix="+" style="font-size: 44px; font-weight: 800; color: var(--text-dark); margin: 0 0 8px; line-height:1;">0</h3>
+                <p style="font-size: 13.5px; color: var(--text-muted); font-weight: 600; margin: 0; text-transform: uppercase; letter-spacing: 0.8px;">Years of Experience</p>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="stat-card">
+                <div style="font-size: 34px; color: var(--secondary); margin-bottom: 18px;"><i class="fa-solid fa-face-smile"></i></div>
+                <h3 class="counter" data-target="10000" data-suffix="+" style="font-size: 44px; font-weight: 800; color: var(--text-dark); margin: 0 0 8px; line-height:1;">0</h3>
+                <p style="font-size: 13.5px; color: var(--text-muted); font-weight: 600; margin: 0; text-transform: uppercase; letter-spacing: 0.8px;">Happy Patients</p>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="stat-card">
+                <div style="font-size: 34px; color: var(--secondary); margin-bottom: 18px;"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                <h3 class="counter" data-target="25" data-suffix="+" style="font-size: 44px; font-weight: 800; color: var(--text-dark); margin: 0 0 8px; line-height:1;">0</h3>
+                <p style="font-size: 13.5px; color: var(--text-muted); font-weight: 600; margin: 0; text-transform: uppercase; letter-spacing: 0.8px;">Expert Treatments</p>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="stat-card">
+                <div style="font-size: 34px; color: var(--secondary); margin-bottom: 18px;"><i class="fa-solid fa-circle-check"></i></div>
+                <h3 class="counter" data-target="98" data-suffix="%" style="font-size: 44px; font-weight: 800; color: var(--text-dark); margin: 0 0 8px; line-height:1;">0</h3>
+                <p style="font-size: 13.5px; color: var(--text-muted); font-weight: 600; margin: 0; text-transform: uppercase; letter-spacing: 0.8px;">Patient Satisfaction</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Clinic Section -->
+    <section class="home-intro reveal">
+        <div class="home-intro-grid" style="align-items: center;">
+            <div class="home-intro-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Modern dental equipment at SmileCare" class="home-intro-img">
+                <div class="home-intro-experience" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);">
+                    <span class="years">15+</span>
+                    <span class="text">Years of Excellence</span>
+                </div>
+            </div>
+            
+            <div class="home-intro-content" style="text-align: left;">
+                <span class="section-badge">About SmileCare</span>
+                <h2 class="section-title">Committed to Your <span>Dental Health & Comfort</span></h2>
+                <p class="section-subtitle" style="margin-bottom: 20px; font-size:15px; line-height: 1.6;">SmileCare Dental Clinic is a premier institution offering comprehensive dental services. We blend clinical expertise, standard protocols, and advanced technology with patient-centric care to deliver an outstanding clinical experience.</p>
+                
+                <div style="background: var(--bg-light); border-left: 4px solid var(--secondary); padding: 15px 20px; border-radius: 0 8px 8px 0; margin-bottom: 25px;">
+                    <h4 style="margin: 0 0 5px; color: var(--text-dark); font-size: 14.5px; font-weight: 700;"><i class="fa-solid fa-crosshairs" style="color: var(--secondary); margin-right: 8px;"></i> Our Mission</h4>
+                    <p style="margin: 0; font-size: 13.5px; color: var(--text-muted); line-height: 1.5; font-style: italic;">"To provide premium, accessible, and completely painless oral healthcare using cutting-edge dental innovations in a sterilized, welcoming environment."</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 30px;">
+                    <div style="display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; color: var(--text-dark);">
+                        <i class="fa-solid fa-circle-check" style="color: var(--secondary);"></i> Modern Equipment
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; color: var(--text-dark);">
+                        <i class="fa-solid fa-circle-check" style="color: var(--secondary);"></i> Experienced Doctors
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; color: var(--text-dark); grid-column: span 2;">
+                        <i class="fa-solid fa-circle-check" style="color: var(--secondary);"></i> Safe & Hygienic Environment
+                    </div>
+                </div>
+
+                <div style="display:flex; gap: 15px;">
+                    <a href="about.html" class="btn btn-primary" style="padding: 12px 24px;">Read More</a>
+                    <a href="gallery.html" class="btn btn-outline" style="padding: 12px 24px;">Clinic Tour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dental Services Section -->
+    <section class="reveal" style="background-color: var(--bg-light);">
+        <div class="section-header">
+            <span class="section-badge">Dental Services</span>
+            <h2 class="section-title">Our Premium <span>Dental Treatments</span></h2>
+            <p class="section-subtitle">We offer a wide array of specialized dental treatments to ensure your smile aesthetics and overall health remain outstanding.</p>
+        </div>
+
+        <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+            <!-- Service 1 -->
+            <div class="why-card" style="text-align: left; background: var(--bg-white); transition: all 0.3s ease;">
+                <div class="why-icon" style="margin: 0 0 20px;"><i class="fa-solid fa-wave-square"></i></div>
+                <h3 style="font-size: 19px; font-weight: 700; margin-bottom: 12px;">Root Canal Treatment</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6; font-size:13.5px; color: var(--text-muted);">Save infected, damaged, or decayed teeth with our advanced, completely painless micro-endodontic therapy.</p>
+                <a href="services.html" style="color: var(--secondary); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size:13.5px;">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="why-card" style="text-align: left; background: var(--bg-white); transition: all 0.3s ease;">
+                <div class="why-icon" style="margin: 0 0 20px;"><i class="fa-solid fa-screwdriver"></i></div>
+                <h3 style="font-size: 19px; font-weight: 700; margin-bottom: 12px;">Dental Implants</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6; font-size:13.5px; color: var(--text-muted);">Restore natural look and function permanently to missing teeth with premium titanium root placements.</p>
+                <a href="services.html" style="color: var(--secondary); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size:13.5px;">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="why-card" style="text-align: left; background: var(--bg-white); transition: all 0.3s ease;">
+                <div class="why-icon" style="margin: 0 0 20px;"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3 style="font-size: 19px; font-weight: 700; margin-bottom: 12px;">Teeth Whitening</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6; font-size:13.5px; color: var(--text-muted);">Brighten your teeth by several shades instantly using our safe, clinically-proven laser whitening systems.</p>
+                <a href="services.html" style="color: var(--secondary); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size:13.5px;">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="why-card" style="text-align: left; background: var(--bg-white); transition: all 0.3s ease;">
+                <div class="why-icon" style="margin: 0 0 20px;"><i class="fa-solid fa-teeth"></i></div>
+                <h3 style="font-size: 19px; font-weight: 700; margin-bottom: 12px;">Braces & Aligners</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6; font-size:13.5px; color: var(--text-muted);">Straighten your teeth invisibly with custom clear aligners or modern comfortable orthodontic braces.</p>
+                <a href="services.html" style="color: var(--secondary); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size:13.5px;">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="why-card" style="text-align: left; background: var(--bg-white); transition: all 0.3s ease;">
+                <div class="why-icon" style="margin: 0 0 20px;"><i class="fa-solid fa-face-smile-beam"></i></div>
+                <h3 style="font-size: 19px; font-weight: 700; margin-bottom: 12px;">Cosmetic Dentistry</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6; font-size:13.5px; color: var(--text-muted);">Upgrade your smile aesthetics using advanced porcelain veneers, bonding, and cosmetic restorations.</p>
+                <a href="services.html" style="color: var(--secondary); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size:13.5px;">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="why-card" style="text-align: left; background: var(--bg-white); transition: all 0.3s ease;">
+                <div class="why-icon" style="margin: 0 0 20px;"><i class="fa-solid fa-child-reaching"></i></div>
+                <h3 style="font-size: 19px; font-weight: 700; margin-bottom: 12px;">Pediatric Dentistry</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6; font-size:13.5px; color: var(--text-muted);">Specialized, gentle dental care designed to keep kids happy and their teeth healthy during their growth.</p>
+                <a href="services.html" style="color: var(--secondary); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; font-size:13.5px;">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="services.html" class="btn btn-outline" style="padding: 12px 28px;">View All 10 Services <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose reveal">
+        <div class="section-header">
+            <span class="section-badge">Why Choose Us</span>
+            <h2 class="section-title">The Clear Choice for <span>Your Dental Care</span></h2>
+            <p class="section-subtitle">We build custom dental solutions based on trust, expertise, safety, and patient-first medical practices.</p>
+        </div>
+
+        <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <!-- Item 1 -->
+            <div class="why-card" style="transition: all 0.3s ease;">
+                <div class="why-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                <h3>Experienced Specialists</h3>
+                <p>Our clinical board comprises Ivy-League trained dental specialists with years of clinical expertise.</p>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="why-card" style="transition: all 0.3s ease;">
+                <div class="why-icon"><i class="fa-solid fa-microscope"></i></div>
+                <h3>Advanced Technology</h3>
+                <p>Equipped with digital 3D scanners, CBCT scanners, and dental endodontic microscopes.</p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="why-card" style="transition: all 0.3s ease;">
+                <div class="why-icon"><i class="fa-solid fa-couch"></i></div>
+                <h3>Comfortable Treatment</h3>
+                <p>Gentle dentistry methods and sedation options for a completely anxiety-free clinical session.</p>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="why-card" style="transition: all 0.3s ease;">
+                <div class="why-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <h3>Affordable Pricing</h3>
+                <p>Transparent pricing breakdowns, payment installment options, and direct insurance billing.</p>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="why-card" style="transition: all 0.3s ease;">
+                <div class="why-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h3>Personalized Care</h3>
+                <p>Tailored treatment strategies built around your dental needs, lifestyle, and post-op care.</p>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="why-card" style="transition: all 0.3s ease;">
+                <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3>24/7 Support</h3>
+                <p>Continuous patient support and on-call emergency dental assistance when you need it most.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Doctor Section -->
+    <section class="reveal" style="background-color: var(--bg-light);">
+        <div class="section-header">
+            <span class="section-badge">Our Specialists</span>
+            <h2 class="section-title">Meet Our Leading <span>Doctors & Surgeons</span></h2>
+            <p class="section-subtitle">Learn from our globally recognized experts, dedicated to ensuring patient comfort and beautiful diagnostic outcomes.</p>
+        </div>
+
+        <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+            <!-- Doctor Preview 1 -->
+            <div class="why-card" style="padding: 0; background: var(--bg-white); overflow: hidden; text-align: left; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: all 0.3s ease;" onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='var(--secondary)';" onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)';">
+                <div style="height: 300px; overflow:hidden; background:#cbd5e1; position: relative;">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80" alt="Dr. Sarah Johnson" style="width:100%; height:100%; object-fit:cover;">
+                    <div style="position: absolute; bottom: 12px; left: 12px; background: rgba(15, 23, 42, 0.85); color: white; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">12 Yrs Exp</div>
+                </div>
+                <div style="padding: 25px;">
+                    <h4 style="font-size: 19px; color: var(--text-dark); font-weight:700; margin: 0 0 4px;">Dr. Sarah Johnson</h4>
+                    <p style="color: var(--text-muted); font-size:12.5px; font-weight:600; margin: 0 0 15px;">DDS, MS (Columbia University)</p>
+                    <div style="display:flex; justify-content:space-between; align-items:center; border-top: 1px solid var(--border-color); padding-top: 15px; margin-top: 15px;">
+                        <span style="font-size: 13px; color: var(--secondary); font-weight: 700;">Senior Orthodontist</span>
+                        <a href="doctors.html" style="color: var(--text-dark); text-decoration:none; font-size: 13.5px; font-weight: 700; display: inline-flex; align-items: center; gap: 5px;">View Profile <i class="fa-solid fa-chevron-right" style="font-size: 9px; color: var(--secondary);"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor Preview 2 -->
+            <div class="why-card" style="padding: 0; background: var(--bg-white); overflow: hidden; text-align: left; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: all 0.3s ease;" onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='var(--secondary)';" onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)';">
+                <div style="height: 300px; overflow:hidden; background:#cbd5e1; position: relative;">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&q=80" alt="Dr. Marcus Chen" style="width:100%; height:100%; object-fit:cover;">
+                    <div style="position: absolute; bottom: 12px; left: 12px; background: rgba(15, 23, 42, 0.85); color: white; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">15 Yrs Exp</div>
+                </div>
+                <div style="padding: 25px;">
+                    <h4 style="font-size: 19px; color: var(--text-dark); font-weight:700; margin: 0 0 4px;">Dr. Marcus Chen</h4>
+                    <p style="color: var(--text-muted); font-size:12.5px; font-weight:600; margin: 0 0 15px;">DDS, PhD (Harvard Medical School)</p>
+                    <div style="display:flex; justify-content:space-between; align-items:center; border-top: 1px solid var(--border-color); padding-top: 15px; margin-top: 15px;">
+                        <span style="font-size: 13px; color: var(--secondary); font-weight: 700;">Implantology Specialist</span>
+                        <a href="doctors.html" style="color: var(--text-dark); text-decoration:none; font-size: 13.5px; font-weight: 700; display: inline-flex; align-items: center; gap: 5px;">View Profile <i class="fa-solid fa-chevron-right" style="font-size: 9px; color: var(--secondary);"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor Preview 3 -->
+            <div class="why-card" style="padding: 0; background: var(--bg-white); overflow: hidden; text-align: left; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); transition: all 0.3s ease;" onmouseenter="this.style.transform='translateY(-6px)'; this.style.borderColor='var(--secondary)';" onmouseleave="this.style.transform='translateY(0)'; this.style.borderColor='var(--border-color)';">
+                <div style="height: 300px; overflow:hidden; background:#cbd5e1; position: relative;">
+                    <img src="https://i.pinimg.com/736x/f1/1c/a2/f11ca206ea93d2d648e6dab28f3a9859.jpg" alt="Dr. Emily Taylor" style="width:100%; height:100%; object-fit:cover;">
+                    <div style="position: absolute; bottom: 12px; left: 12px; background: rgba(15, 23, 42, 0.85); color: white; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">10 Yrs Exp</div>
+                </div>
+                <div style="padding: 25px;">
+                    <h4 style="font-size: 19px; color: var(--text-dark); font-weight:700; margin: 0 0 4px;">Dr. Emily Taylor</h4>
+                    <p style="color: var(--text-muted); font-size:12.5px; font-weight:600; margin: 0 0 15px;">DDS (NYU College of Dentistry)</p>
+                    <div style="display:flex; justify-content:space-between; align-items:center; border-top: 1px solid var(--border-color); padding-top: 15px; margin-top: 15px;">
+                        <span style="font-size: 13px; color: var(--secondary); font-weight: 700;">Cosmetic Dentist</span>
+                        <a href="doctors.html" style="color: var(--text-dark); text-decoration:none; font-size: 13.5px; font-weight: 700; display: inline-flex; align-items: center; gap: 5px;">View Profile <i class="fa-solid fa-chevron-right" style="font-size: 9px; color: var(--secondary);"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Transformation Section -->
+    <section class="reveal">
+        <div class="section-header">
+            <span class="section-badge">Case Studies</span>
+            <h2 class="section-title">Smile <span>Transformations</span></h2>
+            <p class="section-subtitle">Explore visual results of complex dental procedures completed by our clinical board.</p>
+        </div>
+
+        <div class="comparison-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+            <!-- Case 1 -->
+            <div class="comparison-card" style="box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); border-radius: 16px; overflow: hidden; background: var(--bg-white);">
+                <div class="comparison-images" style="display: flex; gap: 5px; background: var(--border-color); padding: 5px;">
+                    <div class="comparison-img-box" style="position: relative; flex: 1; overflow: hidden; border-radius: 8px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa_aVjHGaw15gcXwPwryFPpK8CZWSkb43h3A&s" alt="Teeth Before Whitening" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        <span class="comparison-label" style="position: absolute; top: 10px; left: 10px; background: rgba(15, 23, 42, 0.85); color: white; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 4px; text-transform: uppercase;">Before</span>
+                    </div>
+                    <div class="comparison-img-box" style="position: relative; flex: 1; overflow: hidden; border-radius: 8px;">
+                        <img src="https://i.pinimg.com/736x/44/32/5c/44325c7d19ff44d46af364ca2697a0ac.jpg" alt="Teeth After Whitening" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        <span class="comparison-label" style="position: absolute; top: 10px; left: 10px; background: var(--secondary); color: white; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 4px; text-transform: uppercase;">After</span>
+                    </div>
+                </div>
+                <div class="comparison-info" style="padding: 20px;">
+                    <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 10px;">Laser Teeth Whitening</h3>
+                    <p style="margin: 0; font-size: 13.5px; color: var(--text-muted); line-height: 1.6;">Brightened enamel by 8 shades using safe clinical laser whitening treatment. Sensitivity guards successfully managed.</p>
+                </div>
+            </div>
+
+            <!-- Case 2 -->
+            <div class="comparison-card" style="box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); border-radius: 16px; overflow: hidden; background: var(--bg-white);">
+                <div class="comparison-images" style="display: flex; gap: 5px; background: var(--border-color); padding: 5px;">
+                    <div class="comparison-img-box" style="position: relative; flex: 1; overflow: hidden; border-radius: 8px;">
+                        <img src="https://i.pinimg.com/736x/7b/9d/96/7b9d963302607281a78063c71c5e8b6e.jpg" alt="Teeth Before Veneers" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        <span class="comparison-label" style="position: absolute; top: 10px; left: 10px; background: rgba(15, 23, 42, 0.85); color: white; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 4px; text-transform: uppercase;">Before</span>
+                    </div>
+                    <div class="comparison-img-box" style="position: relative; flex: 1; overflow: hidden; border-radius: 8px;">
+                        <img src="https://i.pinimg.com/736x/1f/b8/3a/1fb83a1a6433ce60fafe2350d59d56cd.jpg" alt="Teeth After Veneers" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        <span class="comparison-label" style="position: absolute; top: 10px; left: 10px; background: var(--secondary); color: white; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 4px; text-transform: uppercase;">After</span>
+                    </div>
+                </div>
+                <div class="comparison-info" style="padding: 20px;">
+                    <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 10px;">Premium Smile Makeover</h3>
+                    <p style="margin: 0; font-size: 13.5px; color: var(--text-muted); line-height: 1.6;">Full veneer restorative placement correcting teeth alignment, structural shape, and shade within 2 clinical visits.</p>
+                </div>
+            </div>
+
+            <!-- Case 3 -->
+            <div class="comparison-card" style="box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); border-radius: 16px; overflow: hidden; background: var(--bg-white);">
+                <div class="comparison-images" style="display: flex; gap: 5px; background: var(--border-color); padding: 5px;">
+                    <div class="comparison-img-box" style="position: relative; flex: 1; overflow: hidden; border-radius: 8px;">
+                        <img src="https://i.pinimg.com/736x/11/db/dc/11dbdca52e76cf0e487fd62739c3a787.jpg" alt="Gap Before Implant" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        <span class="comparison-label" style="position: absolute; top: 10px; left: 10px; background: rgba(15, 23, 42, 0.85); color: white; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 4px; text-transform: uppercase;">Before</span>
+                    </div>
+                    <div class="comparison-img-box" style="position: relative; flex: 1; overflow: hidden; border-radius: 8px;">
+                        <img src="https://i.pinimg.com/736x/23/bc/98/23bc98295aadf08cd7d111b678cb172b.jpg" alt="Tooth restored after Implant" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        <span class="comparison-label" style="position: absolute; top: 10px; left: 10px; background: var(--secondary); color: white; padding: 4px 10px; font-size: 11px; font-weight: 700; border-radius: 4px; text-transform: uppercase;">After</span>
+                    </div>
+                </div>
+                <div class="comparison-info" style="padding: 20px;">
+                    <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 10px;">Dental Implant Restoration</h3>
+                    <p style="margin: 0; font-size: 13.5px; color: var(--text-muted); line-height: 1.6;">Restored gap with permanent titanium root post and customized porcelain crown, restoring natural bite and bone structure.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="gallery.html" class="btn btn-outline" style="padding: 12px 28px;">View Transformation Gallery <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="testimonials-section reveal" style="background-color: var(--bg-light); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="section-header">
+            <span class="section-badge">Reviews</span>
+            <h2 class="section-title">What Our <span>Patients Say</span></h2>
+            <p class="section-subtitle">Real experiences shared by patients who completed their treatments in our clinic.</p>
+        </div>
+
+        <div class="testimonial-slider-container">
+            <div class="testimonial-slider-track">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I always feared going to the dentist, but SmileCare made it feel like a breeze! The root canal treatment was completely painless, and Dr. Sarah kept me calm all the way. Highly recommend!"</p>
+                        <div class="client-profile">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Jane Watson" class="client-img">
+                            <div class="client-info">
+                                <h4>Jane Watson</h4>
+                                <p>Marketing Executive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Outstanding service! Dr. Marcus Chen placed a dental implant for me. The technology they used was impressive, and the healing was incredibly fast. The clinic is absolutely spotless!"</p>
+                        <div class="client-profile">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David Miller" class="client-img">
+                            <div class="client-info">
+                                <h4>David Miller</h4>
+                                <p>Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Our kids actually love visiting this clinic. Dr. Emily is fantastic with pediatric patients, explaining everything using games. Space maintenance was super smooth and painless!"</p>
+                        <div class="client-profile">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="Jessica Alba" class="client-img">
+                            <div class="client-info">
+                                <h4>Jessica Alba</h4>
+                                <p>Parent & Educator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="slider-controls">
+                <span class="slider-arrow" id="slider-prev"><i class="fa-solid fa-chevron-left"></i></span>
+                <div class="slider-dots"></div>
+                <span class="slider-arrow" id="slider-next"><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Technology Section -->
+    <section class="reveal">
+        <div class="section-header">
+            <span class="section-badge">Clinic Tech</span>
+            <h2 class="section-title">Advanced Dental <span>Technology</span></h2>
+            <p class="section-subtitle">High-end medical tooling utilized inside our facilities to support fast, painless dental procedures.</p>
+        </div>
+
+        <div class="tech-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+            <!-- Tech 1 -->
+            <div class="tech-card" style="box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); background: var(--bg-white); border-radius: 16px; overflow: hidden; transition: all 0.3s ease;">
+                <div class="tech-img-placeholder" style="height: 180px; overflow: hidden;">
+                    <img src="https://i.pinimg.com/736x/76/e1/35/76e1357bbf5a0d71f7e2aa8b819a6f35.jpg" alt="Digital X-Ray Device" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div style="padding: 20px; text-align: left;">
+                    <h3 style="font-size: 17px; font-weight: 700; margin: 0 0 8px;"><i class="fa-solid fa-circle-nodes" style="color: var(--secondary); margin-right: 8px;"></i> Digital X-Ray</h3>
+                    <p style="margin: 0; font-size: 13px; color: var(--text-muted); line-height: 1.6;">Ultra-low radiation scans that map root canals, jaw bones, and structures with instant high-resolution screens.</p>
+                </div>
+            </div>
+
+            <!-- Tech 2 -->
+            <div class="tech-card" style="box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); background: var(--bg-white); border-radius: 16px; overflow: hidden; transition: all 0.3s ease;">
+                <div class="tech-img-placeholder" style="height: 180px; overflow: hidden;">
+                    <img src="https://i.pinimg.com/736x/06/2d/5c/062d5c63a1011c1d2d1766eb7fdd7dbc.jpg" alt="Clinical Laser Device" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div style="padding: 20px; text-align: left;">
+                    <h3 style="font-size: 17px; font-weight: 700; margin: 0 0 8px;"><i class="fa-solid fa-bolt-lightning" style="color: var(--secondary); margin-right: 8px;"></i> Laser Dentistry</h3>
+                    <p style="margin: 0; font-size: 13px; color: var(--text-muted); line-height: 1.6;">Painless soft-tissue therapies, aesthetic gum contouring, and bloodless dental procedures with zero stitching.</p>
+                </div>
+            </div>
+
+            <!-- Tech 3 -->
+            <div class="tech-card" style="box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); background: var(--bg-white); border-radius: 16px; overflow: hidden; transition: all 0.3s ease;">
+                <div class="tech-img-placeholder" style="height: 180px; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=500&q=80" alt="3D Dental Scanning Tool" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div style="padding: 20px; text-align: left;">
+                    <h3 style="font-size: 17px; font-weight: 700; margin: 0 0 8px;"><i class="fa-solid fa-camera-rotate" style="color: var(--secondary); margin-right: 8px;"></i> 3D Dental Scanning</h3>
+                    <p style="margin: 0; font-size: 13px; color: var(--text-muted); line-height: 1.6;">Digital impressions and computerized crowns structure layouts replacing traditional physical messy molding gels.</p>
+                </div>
+            </div>
+
+            <!-- Tech 4 -->
+            <div class="tech-card" style="box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); background: var(--bg-white); border-radius: 16px; overflow: hidden; transition: all 0.3s ease;">
+                <div class="tech-img-placeholder" style="height: 180px; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1445527815219-ecbfec67492e?auto=format&fit=crop&w=500&q=80" alt="Modern Dental sterilization Suite" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div style="padding: 20px; text-align: left;">
+                    <h3 style="font-size: 17px; font-weight: 700; margin: 0 0 8px;"><i class="fa-solid fa-shield-virus" style="color: var(--secondary); margin-right: 8px;"></i> Modern Equipment</h3>
+                    <p style="margin: 0; font-size: 13px; color: var(--text-muted); line-height: 1.6;">High-precision dental endodontic microscopes and sterile class-B autoclave sterilizers for complete clinical hygiene.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Accordion) -->
+    <section class="faq-section reveal" style="background-color: var(--bg-light); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 80px 0;">
+        <div class="section-header">
+            <span class="section-badge">FAQs</span>
+            <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+            <p class="section-subtitle">Find fast answers to common questions about appointments, consultations, and our dental clinic policies.</p>
+        </div>
+
+        <div class="faq-container" style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3>How often should I visit a dentist?</h3>
+                    <i class="fa-solid fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-content">
+                        We recommend scheduling a professional dental checkup and cleanings every 6 months to prevent plaque buildup, keep gums healthy, and diagnose any decay or issues early.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3>Is root canal treatment painful?</h3>
+                    <i class="fa-solid fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-content">
+                        Not at all! With modern local anesthesia, specialized micro-tools, and experienced endodontists, a root canal treatment at SmileCare feels no different than getting a standard dental filling.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3>Do you provide emergency dental care?</h3>
+                    <i class="fa-solid fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-content">
+                        Yes, we have dedicated emergency spots reserved daily for situations like severe dental trauma, knocked-out teeth, or sudden toothaches. Call our emergency hotline at +1 (555) 765-4321 for immediate guidance.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <div class="faq-header">
+                    <h3>What payment options are available?</h3>
+                    <i class="fa-solid fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-content">
+                        We accept cash, all major credit cards, and work with multiple health insurance providers. For complex treatments, we also offer zero-interest clinical installment plans to match your monthly budget.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Call-to-action Banner -->
+    <section class="cta-banner reveal" style="padding: 100px 0; background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);">
+        <div class="cta-banner-content" style="max-width: 800px; margin: 0 auto; text-align: center; padding: 0 20px;">
+            <h2 style="font-size: clamp(28px, 4vw, 42px); font-weight: 800; color: white; margin-bottom: 20px; line-height: 1.2;">Ready To Transform Your Smile?</h2>
+            <p style="font-size: 16.5px; color: rgba(255, 255, 255, 0.9); margin-bottom: 35px; line-height: 1.7;">Schedule your professional consultation online today. Our team is ready to deliver premium, painless dental procedures tailored to your unique requirements.</p>
+            <button onclick="openAppointmentPopup()" class="btn btn-white" style="padding: 15px 32px; font-size: 15px; font-weight: 700; color: var(--primary);"><i class="fa-regular fa-calendar-check" style="margin-right: 8px;"></i> Book Your Appointment</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: var(--bg-white);">
+                    <i class="fa-solid fa-tooth" style="filter: brightness(1.2);"></i> Smile<span>Care</span>
+                </a>
+                <p class="footer-desc">SmileCare Dental Clinic delivers world-class dental procedures and customized care using premium medical technology and specialized procedures.</p>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                    <li><a href="doctors.html"><i class="fa-solid fa-chevron-right"></i> Doctors</a></li>
+                    <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Teeth Cleaning</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Teeth Whitening</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Root Canal</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Dental Implants</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Orthodontic Braces</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6;">Subscribe to our newsletter for health tips and clinic updates.</p>
+                <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                    <input type="email" placeholder="Your Email" required autocomplete="email">
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmileCare Dental Clinic. All rights reserved.</p>
+            <p>Developed with <i class="fa-solid fa-heart" style="color: #ef4444; font-size: 11px;"></i> for health care.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Go to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="whatsapp-float" id="whatsapp-btn" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </div>
+
+    <!-- Global Appointment Popup Modal -->
+    <div class="modal-overlay" id="appointment-popup-modal">
+        <div class="modal-box" style="text-align: left; max-width: 600px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <h3 style="margin: 0; color: var(--text-dark);"><i class="fa-regular fa-calendar-check" style="color: var(--secondary); margin-right: 8px;"></i> Book An Appointment</h3>
+                <span onclick="closeAppointmentPopup()" style="font-size: 28px; cursor: pointer; color: var(--text-muted); font-weight:300; line-height:1;">&times;</span>
+            </div>
+            <form class="appointment-page-form" id="popupBookingForm" onsubmit="handleBookingSubmit(event, true)">
+                <div class="form-group">
+                    <label for="popup-patientName">Patient Name *</label>
+                    <input type="text" id="popup-patientName" class="form-control" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientEmail">Email Address *</label>
+                    <input type="email" id="popup-patientEmail" class="form-control" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientPhone">Phone Number *</label>
+                    <input type="tel" id="popup-patientPhone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientAge">Patient Age *</label>
+                    <input type="number" id="popup-patientAge" class="form-control" placeholder="25" min="1" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-selectDoctor">Select Doctor *</label>
+                    <select id="popup-selectDoctor" class="form-control" required>
+                        <option value="First Available Specialist" selected>First Available Specialist</option>
+                        <option value="Dr. John Smith (Senior Dental Specialist)">Dr. John Smith (Senior Specialist)</option>
+                        <option value="Dr. Sarah Johnson (Senior Orthodontist)">Dr. Sarah Johnson (Orthodontist)</option>
+                        <option value="Dr. Marcus Chen (Implantology Specialist)">Dr. Marcus Chen (Implantologist)</option>
+                        <option value="Dr. Emily Taylor (Cosmetic Dentist)">Dr. Emily Taylor (Cosmetic Dentist)</option>
+                        <option value="Dr. Alex Mercer (Pediatric Specialist)">Dr. Alex Mercer (Pediatric Specialist)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-selectService">Select Treatment *</label>
+                    <select id="popup-selectService" class="form-control" required>
+                        <option value="" disabled selected>Choose a Treatment</option>
+                        <option value="General Dentistry">General Dentistry</option>
+                        <option value="Teeth Cleaning">Teeth Cleaning</option>
+                        <option value="Teeth Whitening">Teeth Whitening</option>
+                        <option value="Root Canal Treatment">Root Canal Treatment</option>
+                        <option value="Dental Implants">Dental Implants</option>
+                        <option value="Braces & Aligners">Braces & Aligners</option>
+                        <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                        <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                        <option value="Gum Treatment">Gum Treatment</option>
+                        <option value="Wisdom Tooth Removal">Wisdom Tooth Removal</option>
+                    </select>
+                </div>
+
+                <div class="form-group form-full">
+                    <label for="popup-appointmentDate">Preferred Appointment Date *</label>
+                    <input type="date" id="popup-appointmentDate" class="form-control" required>
+                </div>
+
+                <div class="form-group form-full">
+                    <label for="popup-patientMessage">Additional Message (Optional)</label>
+                    <textarea id="popup-patientMessage" class="form-control" placeholder="Share any symptoms or requirements with us..."></textarea>
+                </div>
+
+                <div class="form-group form-full" style="margin-top: 10px;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Booking Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Booking Confirmation Modal (Shared Modal Overlay) -->
+    <div class="modal-overlay" id="confirm-modal-overlay">
+        <div class="modal-box">
+            <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Appointment Requested!</h3>
+            <p style="margin-bottom: 20px;">Thank you for booking with SmileCare. Here are your details:</p>
+            <div style="text-align: left; background: var(--bg-light); padding: 15px 20px; border-radius: 8px; margin-bottom: 25px; font-size: 13.5px; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 8px;">
+                <p style="margin:0;"><strong>Name:</strong> <span id="confirm-name" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Age:</strong> <span id="confirm-age" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Email:</strong> <span id="confirm-email" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Phone:</strong> <span id="confirm-phone" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Doctor:</strong> <span id="confirm-doctor" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Service:</strong> <span id="confirm-service" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Date:</strong> <span id="confirm-date" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Notes:</strong> <span id="confirm-message" style="color: var(--text-dark); font-style: italic;"></span></p>
+            </div>
+            <button onclick="closeConfirmModal()" class="btn btn-primary" style="width: 100%;">Got It, Thanks!</button>
+        </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover our clinic history, our mission, vision, core values, modern clinical facilities, hygiene standards, and meet our specialized dentists at SmileCare.">
+    <title>About Us - SmileCare Dental Clinic</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6.4.0 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Page Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">
+            <i class="fa-solid fa-tooth"></i> SmileCare
+        </div>
+        <div class="preloader-spinner"></div>
+    </div>
+
+   
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-tooth"></i> Smile<span>Care</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-cta"><button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 10px 22px; font-size: 14px;">Book Now</button></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Intro Header -->
+       <div class="page-intro" style="background: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+        <div class="doctors-hero-overlay"></div>
+        <div class="page-intro-content" style="position: relative; z-index: 2;">
+                       <h1>About  Our Clinic</h1>
+
+            <p style="color: #cbd5e1;">Providing excellence in oral healthcare, painless procedures, and beautiful smiles since 2001.</p>
+ 
+        </div>
+    </div>
+     
+    
+
+    <!-- Clinic Story Section -->
+    <section class="about-clinic reveal">
+        <div class="about-intro-grid">
+            <div class="about-intro-content">
+                <span class="section-badge">Our Story</span>
+                <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Creating Smiles That <span>Inspire Confidence</span></h2>
+                <p>SmileCare Dental Clinic was founded with a clear directive: to make high-quality, modern oral health procedures accessible, comfortable, and painless for families in our community. Over the last 25 years, we have grown from a single treatment operatory to a multi-specialty care clinic equipped with the latest diagnostic imaging and laser technology.</p>
+                <p>We pride ourselves on our highly customized consultation process. We take time to understand every patient's clinical history, anxiety triggers, and aesthetic expectations. From routine checkups to complex implant surgeries, our clinic maintains a highly caring and sterile environment to secure your health outcomes.</p>
+                <div style="margin-top: 30px;">
+                    <a href="contact.html" class="btn btn-primary">Find Our Location</a>
+                </div>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80" alt="Patient consultation room" class="about-intro-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision reveal">
+        <div class="mission-vision-grid">
+            <!-- Mission -->
+            <div class="mv-card">
+                <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <div class="mv-info">
+                    <h3>Our Mission</h3>
+                    <p>To deliver world-class dental procedures and customized care by blending clinical expertise, international sterilization protocols, and advanced medical tech with patient comfort and transparency.</p>
+                </div>
+            </div>
+
+            <!-- Vision -->
+            <div class="mv-card">
+                <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
+                <div class="mv-info">
+                    <h3>Our Vision</h3>
+                    <p>To be recognized as the leading family dental care provider in the region, establishing new standards for painless clinical treatments, diagnostic precision, and aesthetic smile transformations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="reveal">
+        <div class="section-header">
+            <span class="section-badge">Core Values</span>
+            <h2 class="section-title">The Foundation of <span>Our Practice</span></h2>
+            <p class="section-subtitle">Our clinical board operates on four central columns to guarantee trust, safety, and health care outcomes.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-heart"></i></div>
+                <h3>Compassionate Care</h3>
+                <p>We design procedures to make dental anxiety history, maintaining a warm and gentle environment.</p>
+            </div>
+            
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                <h3>Clinical Excellence</h3>
+                <p>Our specialists participate in ongoing medical training to keep therapies aligned with international standards.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-user-shield"></i></div>
+                <h3>Patient Safety</h3>
+                <p>From Class-B sterilizers to advanced air filtration, patient safety is our highest operational metric.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                <h3>Integrity & Clarity</h3>
+                <p>We provide itemized treatment breakdowns and transparent costs before any clinical session begins.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Facilities & Safety Section -->
+    <section class="reveal" style="background-color: var(--bg-light);">
+        <div class="about-intro-grid">
+            <div>
+                <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=800&q=80" alt="Clinic sterile zone" class="about-intro-img" style="border: 6px solid #ffffff;">
+            </div>
+            <div class="about-intro-content">
+                <span class="section-badge">Hygiene & Safety</span>
+                <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">International <span>Sanitation Protocols</span></h2>
+                <p>SmileCare incorporates a dedicated Central Sterilization Department (CSSD). We enforce multi-stage biological checks to ensure tool hygiene and minimize clinical cross-infection risks.</p>
+                <p style="margin-top: 15px;">All operatories are equipped with specialized medical air purification filters, class-B autoclave vacuums, and diagnostic screens to provide complete safety and diagnostic visibility.</p>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 25px;">
+                    <li style="display:flex; align-items:center; gap: 10px; font-size:14px; color: var(--text-muted);"><i class="fa-solid fa-circle-check" style="color: var(--secondary);"></i> 100% sterilized single-use packs for every consultation</li>
+                    <li style="display:flex; align-items:center; gap: 10px; font-size:14px; color: var(--text-muted);"><i class="fa-solid fa-circle-check" style="color: var(--secondary);"></i> Class-B vacuum heat autoclaving systems</li>
+                    <li style="display:flex; align-items:center; gap: 10px; font-size:14px; color: var(--text-muted);"><i class="fa-solid fa-circle-check" style="color: var(--secondary);"></i> Automated diagnostic equipment chemical disinfectants</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Tech Section -->
+    <section class="about-tech reveal">
+        <div class="section-header">
+            <span class="section-badge">Advanced Tech</span>
+            <h2 class="section-title">Modern Diagnostic <span>& Treatment Equipment</span></h2>
+            <p class="section-subtitle">We invest in the latest global dental equipment to increase treatment speed, ensure diagnostic accuracy, and reduce patient discomfort.</p>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-img-placeholder">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=500&q=80" alt="Intraoral 3D scanner mockup">
+                </div>
+                <h3>Intraoral 3D Scanner</h3>
+                <p>Replaces gooey traditional molds with safe, instant digital scans for crowns, bridges, and clear aligners.</p>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-img-placeholder">
+                    <img src="https://i.pinimg.com/1200x/50/0c/74/500c74540a59eabd64a4651aa8c1857c.jpg" alt="Dental Operatory Microscope">
+                </div>
+                <h3>Dental Microscope</h3>
+                <p>Allows high-magnification clarity during micro-root canals to ensure maximum root preservation and pain relief.</p>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-img-placeholder">
+                    <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=500&q=80" alt="Laser whitening system">
+                </div>
+                <h3>Painless Dental Laser</h3>
+                <p>Enables bloodless, minimally-invasive gum surgeries and instant whitening without tooth sensitivity issues.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Achievements Section -->
+    <section class="reveal" style="background-color: var(--bg-light);">
+        <div class="section-header">
+            <span class="section-badge">Achievements</span>
+            <h2 class="section-title">Awards & <span>Recognitions</span></h2>
+            <p class="section-subtitle">SmileCare's clinical excellence has been highlighted by various dental and medical councils.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card" style="background: var(--bg-white);">
+                <div class="why-icon"><i class="fa-solid fa-trophy"></i></div>
+                <h3 style="font-size:18px;">Best Medical Clinic 2024</h3>
+                <p style="font-size:13.5px;">Awarded by the National Healthcare Board for clean safety parameters and patient review ratings.</p>
+            </div>
+            
+            <div class="why-card" style="background: var(--bg-white);">
+                <div class="why-icon"><i class="fa-solid fa-medal"></i></div>
+                <h3 style="font-size:18px;">Dental Innovation Award</h3>
+                <p style="font-size:13.5px;">Recognized for clinical integration of 3D computer-guided implants and painless laser surgeries.</p>
+            </div>
+
+            <div class="why-card" style="background: var(--bg-white);">
+                <div class="why-icon"><i class="fa-solid fa-star-of-life"></i></div>
+                <h3 style="font-size:18px;">25 Years Service Badge</h3>
+                <p style="font-size:13.5px;">A badge of trust highlighting a quarter-century of providing oral wellness programs to the community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: var(--bg-white);">
+                    <i class="fa-solid fa-tooth" style="filter: brightness(1.2);"></i> Smile<span>Care</span>
+                </a>
+                <p class="footer-desc">SmileCare Dental Clinic delivers world-class dental procedures and customized care using premium medical technology and specialized procedures.</p>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                    <li><a href="doctors.html"><i class="fa-solid fa-chevron-right"></i> Doctors</a></li>
+                    <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Teeth Cleaning</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Teeth Whitening</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Root Canal</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Dental Implants</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Orthodontic Braces</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6;">Subscribe to our newsletter for health tips and clinic updates.</p>
+                <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                    <input type="email" placeholder="Your Email" required autocomplete="email">
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmileCare Dental Clinic. All rights reserved.</p>
+            <p>Developed with <i class="fa-solid fa-heart" style="color: #ef4444; font-size: 11px;"></i> for health care.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Go to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="whatsapp-float" id="whatsapp-btn" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </div>
+
+    <!-- Global Appointment Popup Modal -->
+    <div class="modal-overlay" id="appointment-popup-modal">
+        <div class="modal-box" style="text-align: left; max-width: 600px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <h3 style="margin: 0; color: var(--text-dark);"><i class="fa-regular fa-calendar-check" style="color: var(--secondary); margin-right: 8px;"></i> Book An Appointment</h3>
+                <span onclick="closeAppointmentPopup()" style="font-size: 28px; cursor: pointer; color: var(--text-muted); font-weight:300; line-height:1;">&times;</span>
+            </div>
+            <form class="appointment-page-form" id="popupBookingForm" onsubmit="handleBookingSubmit(event, true)">
+                <div class="form-group">
+                    <label for="popup-patientName">Patient Name *</label>
+                    <input type="text" id="popup-patientName" class="form-control" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientEmail">Email Address *</label>
+                    <input type="email" id="popup-patientEmail" class="form-control" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientPhone">Phone Number *</label>
+                    <input type="tel" id="popup-patientPhone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientAge">Patient Age *</label>
+                    <input type="number" id="popup-patientAge" class="form-control" placeholder="25" min="1" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-selectDoctor">Select Doctor *</label>
+                    <select id="popup-selectDoctor" class="form-control" required>
+                        <option value="First Available Specialist" selected>First Available Specialist</option>
+                        <option value="Dr. John Smith (Senior Dental Specialist)">Dr. John Smith (Senior Specialist)</option>
+                        <option value="Dr. Sarah Johnson (Senior Orthodontist)">Dr. Sarah Johnson (Orthodontist)</option>
+                        <option value="Dr. Marcus Chen (Implantology Specialist)">Dr. Marcus Chen (Implantologist)</option>
+                        <option value="Dr. Emily Taylor (Cosmetic Dentist)">Dr. Emily Taylor (Cosmetic Dentist)</option>
+                        <option value="Dr. Alex Mercer (Pediatric Specialist)">Dr. Alex Mercer (Pediatric Specialist)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-selectService">Select Treatment *</label>
+                    <select id="popup-selectService" class="form-control" required>
+                        <option value="" disabled selected>Choose a Treatment</option>
+                        <option value="General Dentistry">General Dentistry</option>
+                        <option value="Teeth Cleaning">Teeth Cleaning</option>
+                        <option value="Teeth Whitening">Teeth Whitening</option>
+                        <option value="Root Canal Treatment">Root Canal Treatment</option>
+                        <option value="Dental Implants">Dental Implants</option>
+                        <option value="Braces & Aligners">Braces & Aligners</option>
+                        <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                        <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                        <option value="Gum Treatment">Gum Treatment</option>
+                        <option value="Wisdom Tooth Removal">Wisdom Tooth Removal</option>
+                    </select>
+                </div>
+
+                <div class="form-group form-full">
+                    <label for="popup-appointmentDate">Preferred Appointment Date *</label>
+                    <input type="date" id="popup-appointmentDate" class="form-control" required>
+                </div>
+
+                <div class="form-group form-full">
+                    <label for="popup-patientMessage">Additional Message (Optional)</label>
+                    <textarea id="popup-patientMessage" class="form-control" placeholder="Share any symptoms or requirements with us..."></textarea>
+                </div>
+
+                <div class="form-group form-full" style="margin-top: 10px;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Booking Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Booking Confirmation Modal (Shared Modal) -->
+    <div class="modal-overlay" id="confirm-modal-overlay">
+        <div class="modal-box">
+            <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Appointment Requested!</h3>
+            <p style="margin-bottom: 20px;">Thank you for booking with SmileCare. Here are your details:</p>
+            <div style="text-align: left; background: var(--bg-light); padding: 15px 20px; border-radius: 8px; margin-bottom: 25px; font-size: 13.5px; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 8px;">
+                <p style="margin:0;"><strong>Name:</strong> <span id="confirm-name" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Age:</strong> <span id="confirm-age" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Email:</strong> <span id="confirm-email" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Phone:</strong> <span id="confirm-phone" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Doctor:</strong> <span id="confirm-doctor" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Service:</strong> <span id="confirm-service" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Date:</strong> <span id="confirm-date" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Notes:</strong> <span id="confirm-message" style="color: var(--text-dark); font-style: italic;"></span></p>
+            </div>
+            <button onclick="closeConfirmModal()" class="btn btn-primary" style="width: 100%;">Got It, Thanks!</button>
+        </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="js/script.js"></script>
+</body>
+</html>

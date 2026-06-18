@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the comprehensive dental care treatments offered by SmileCare Clinic, including implants, whitening, root canals, braces, aligners, and wisdom teeth extractions.">
+    <title>Our Services - SmileCare Dental Clinic</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6.4.0 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Page Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">
+            <i class="fa-solid fa-tooth"></i> SmileCare
+        </div>
+        <div class="preloader-spinner"></div>
+    </div>
+
+   
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-tooth"></i> Smile<span>Care</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-cta"><button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 10px 22px; font-size: 14px;">Book Now</button></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Intro Header -->
+     <div class="page-intro" style="background: url('https://i.pinimg.com/1200x/e6/01/d2/e601d2793c062e0e002748f351e5107d.jpg') center/cover no-repeat;">
+        <div class="gallery-hero-overlay"></div>
+        <div class="page-intro-content" style="position: relative; z-index: 2;">
+              <h1> <span> Our Dental Services</span></h1>
+                       
+
+            <p style="color: #2b99e7;">Comprehensive oral healthcare treatments, from routine prevention to advanced aesthetic surgeries.</p>
+ 
+             
+        </div>
+    </div>
+
+  
+
+    <!-- Services Detail Section -->
+    <section class="services-page-section reveal">
+        <div class="services-detail-grid">
+            <!-- Service 1: General Dentistry -->
+            <div class="service-detail-card">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" alt="General Dentistry">
+                    <div class="service-detail-icon"><i class="fa-solid fa-house-medical"></i></div>
+                </div>
+                <div class="service-detail-info">
+                    <h3>General Dentistry</h3>
+                    <p>Routine checkups, fillings, and family consulting to identify tooth decay and stabilize oral health before problems arise.</p>
+                    <h4 class="service-benefits-title">Key Benefits</h4>
+                    <ul class="service-benefits-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Comprehensive oral diagnostics</li>
+                        <li><i class="fa-solid fa-circle-check"></i> High-quality composite fillings</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Early detection of gum diseases</li>
+                    </ul>
+                    <h4 class="service-benefits-title">Treatment Process</h4>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <span class="process-number">01</span>
+                            <h5>Consult</h5>
+                            <p>Oral exam & diagnostic scans</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">02</span>
+                            <h5>Clean</h5>
+                            <p>Remove decay & fill cavities</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">03</span>
+                            <h5>Review</h5>
+                            <p>Follow-up care instructions</p>
+                        </div>
+                    </div>
+                    <div class="service-card-footer">
+                        <button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">Book Slot</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: Teeth Cleaning -->
+            <div class="service-detail-card">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Teeth Cleaning">
+                    <div class="service-detail-icon"><i class="fa-solid fa-hand-holding-hand"></i></div>
+                </div>
+                <div class="service-detail-info">
+                    <h3>Teeth Cleaning</h3>
+                    <p>Professional plaque, tartar removal, and gum pocket therapy to secure fresh breath and protect enamel from staining agents.</p>
+                    <h4 class="service-benefits-title">Key Benefits</h4>
+                    <ul class="service-benefits-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Safe ultrasonic scaling tools</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Polish and surface stain removal</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Long-term breath freshening</li>
+                    </ul>
+                    <h4 class="service-benefits-title">Treatment Process</h4>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <span class="process-number">01</span>
+                            <h5>Diagnose</h5>
+                            <p>Evaluate plaque accumulation</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">02</span>
+                            <h5>Scale</h5>
+                            <p>Ultrasonic tartar extraction</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">03</span>
+                            <h5>Polish</h5>
+                            <p>Clinical cleaning paste shine</p>
+                        </div>
+                    </div>
+                    <div class="service-card-footer">
+                        <button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">Book Slot</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: Teeth Whitening -->
+            <div class="service-detail-card">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=600&q=80" alt="Teeth Whitening">
+                    <div class="service-detail-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                </div>
+                <div class="service-detail-info">
+                    <h3>Teeth Whitening</h3>
+                    <p>Clinical laser whitening procedures to lift decades of coffee, tea, and tobacco stains safely and quickly.</p>
+                    <h4 class="service-benefits-title">Key Benefits</h4>
+                    <ul class="service-benefits-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Up to 8 shades whiter in 1 visit</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Customized sensitivity guards</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Clinically approved whitening gel</li>
+                    </ul>
+                    <h4 class="service-benefits-title">Treatment Process</h4>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <span class="process-number">01</span>
+                            <h5>Shade</h5>
+                            <p>Establish initial base shade</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">02</span>
+                            <h5>Bleach</h5>
+                            <p>Laser light whitening gel activation</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">03</span>
+                            <h5>Guard</h5>
+                            <p>Fluoride application to reduce ache</p>
+                        </div>
+                    </div>
+                    <div class="service-card-footer">
+                        <button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">Book Slot</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4: Root Canal Treatment -->
+            <div class="service-detail-card">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="Root Canal Treatment">
+                    <div class="service-detail-icon"><i class="fa-solid fa-wave-square"></i></div>
+                </div>
+                <div class="service-detail-info">
+                    <h3>Root Canal Treatment</h3>
+                    <p>Painless micro-endodontic treatments under magnification to clear root infections and preserve your original tooth.</p>
+                    <h4 class="service-benefits-title">Key Benefits</h4>
+                    <ul class="service-benefits-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Advanced computer-guided drilling</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Direct, immediate pain relief</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Restores natural chewing power</li>
+                    </ul>
+                    <h4 class="service-benefits-title">Treatment Process</h4>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <span class="process-number">01</span>
+                            <h5>Assess</h5>
+                            <p>3D X-rays of infected root</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">02</span>
+                            <h5>Extract</h5>
+                            <p>Micro-tool pulp cleaning & sealer</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">03</span>
+                            <h5>Crown</h5>
+                            <p>Place custom protective crown</p>
+                        </div>
+                    </div>
+                    <div class="service-card-footer">
+                        <button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">Book Slot</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5: Dental Implants -->
+            <div class="service-detail-card">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1445527815219-ecbfec67492e?auto=format&fit=crop&w=600&q=80" alt="Dental Implants">
+                    <div class="service-detail-icon"><i class="fa-solid fa-screwdriver"></i></div>
+                </div>
+                <div class="service-detail-info">
+                    <h3>Dental Implants</h3>
+                    <p>Premium titanium post anchors fused into the jawbone to replace missing teeth with lifelike, functional prosthetics.</p>
+                    <h4 class="service-benefits-title">Key Benefits</h4>
+                    <ul class="service-benefits-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Permanently stops jaw bone loss</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Matches neighboring tooth enamel</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Highly durable (lasts a lifetime)</li>
+                    </ul>
+                    <h4 class="service-benefits-title">Treatment Process</h4>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <span class="process-number">01</span>
+                            <h5>Scan</h5>
+                            <p>3D bone structure planning</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">02</span>
+                            <h5>Anchor</h5>
+                            <p>Place titanium root implant</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">03</span>
+                            <h5>Restore</h5>
+                            <p>Screw in custom porcelain crown</p>
+                        </div>
+                    </div>
+                    <div class="service-card-footer">
+                        <button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">Book Slot</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6: Braces & Aligners -->
+            <div class="service-detail-card">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=600&q=80" alt="Braces & Aligners">
+                    <div class="service-detail-icon"><i class="fa-solid fa-grip-lines-vertical"></i></div>
+                </div>
+                <div class="service-detail-info">
+                    <h3>Braces & Aligners</h3>
+                    <p>Align crowded, gapped, or misaligned teeth using customized clear aligners or traditional metal/ceramic braces.</p>
+                    <h4 class="service-benefits-title">Key Benefits</h4>
+                    <ul class="service-benefits-list">
+                        <li><i class="fa-solid fa-circle-check"></i> 3D treatment path planning</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Comfortable, invisible alignment</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Improves bite force alignment</li>
+                    </ul>
+                    <h4 class="service-benefits-title">Treatment Process</h4>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <span class="process-number">01</span>
+                            <h5>Model</h5>
+                            <p>Digital 3D jaw scans</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">02</span>
+                            <h5>Fit</h5>
+                            <p>Deliver custom aligner trays</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">03</span>
+                            <h5>Align</h5>
+                            <p>Shift trays every 2 weeks</p>
+                        </div>
+                    </div>
+                    <div class="service-card-footer">
+                        <button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">Book Slot</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 7: Cosmetic Dentistry -->
+            <div class="service-detail-card">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1579684389782-64d84b5e901a?auto=format&fit=crop&w=600&q=80" alt="Cosmetic Dentistry">
+                    <div class="service-detail-icon"><i class="fa-solid fa-gem"></i></div>
+                </div>
+                <div class="service-detail-info">
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Porcelain veneers, cosmetic bonding, and complete smile makeovers designed to elevate look, shape, and self-confidence.</p>
+                    <h4 class="service-benefits-title">Key Benefits</h4>
+                    <ul class="service-benefits-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Handcrafted ultra-thin veneers</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Completely custom shade matching</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Fast, stunning smile correction</li>
+                    </ul>
+                    <h4 class="service-benefits-title">Treatment Process</h4>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <span class="process-number">01</span>
+                            <h5>Mockup</h5>
+                            <p>Design visual smile prototype</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">02</span>
+                            <h5>Prep</h5>
+                            <p>Shave minimal micro-enamel</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">03</span>
+                            <h5>Bond</h5>
+                            <p>Cement porcelain veneers</p>
+                        </div>
+                    </div>
+                    <div class="service-card-footer">
+                        <button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">Book Slot</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 8: Pediatric Dentistry -->
+            <div class="service-detail-card">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&w=600&q=80" alt="Pediatric Dentistry">
+                    <div class="service-detail-icon"><i class="fa-solid fa-child-reaching"></i></div>
+                </div>
+                <div class="service-detail-info">
+                    <h3>Pediatric Dentistry</h3>
+                    <p>Gentle oral hygiene checks, sealants, and preventative cleanings customized to keep kids comfortable and build clean habits.</p>
+                    <h4 class="service-benefits-title">Key Benefits</h4>
+                    <ul class="service-benefits-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Kid-friendly clinical operatory</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Enamel protective sealants</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Positive cavity-free education</li>
+                    </ul>
+                    <h4 class="service-benefits-title">Treatment Process</h4>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <span class="process-number">01</span>
+                            <h5>Welcome</h5>
+                            <p>Comfortable verbal introduction</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">02</span>
+                            <h5>Prevent</h5>
+                            <p>Soft scaling & fluoride gels</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">03</span>
+                            <h5>Reward</h5>
+                            <p>Space checks & clinic gift reward</p>
+                        </div>
+                    </div>
+                    <div class="service-card-footer">
+                        <button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">Book Slot</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 9: Gum Treatment -->
+            <div class="service-detail-card">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Gum Treatment">
+                    <div class="service-detail-icon"><i class="fa-solid fa-droplet-slash"></i></div>
+                </div>
+                <div class="service-detail-info">
+                    <h3>Gum Treatment</h3>
+                    <p>Therapy for bleeding gums, gingivitis, and advanced periodontitis using laser root planing to restore stable teeth foundations.</p>
+                    <h4 class="service-benefits-title">Key Benefits</h4>
+                    <ul class="service-benefits-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Stop gum recession and bleeding</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Deep laser scaling & disinfection</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Secures teeth root stability</li>
+                    </ul>
+                    <h4 class="service-benefits-title">Treatment Process</h4>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <span class="process-number">01</span>
+                            <h5>Check</h5>
+                            <p>Measure gum pockets recession</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">02</span>
+                            <h5>Plan</h5>
+                            <p>Laser disinfection & scaling</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">03</span>
+                            <h5>Heal</h5>
+                            <p>Verify gum reattachment checks</p>
+                        </div>
+                    </div>
+                    <div class="service-card-footer">
+                        <button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">Book Slot</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 10: Wisdom Tooth Removal -->
+            <div class="service-detail-card">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Wisdom Tooth Removal">
+                    <div class="service-detail-icon"><i class="fa-solid fa-tooth"></i></div>
+                </div>
+                <div class="service-detail-info">
+                    <h3>Wisdom Tooth Removal</h3>
+                    <p>Safe surgical extraction of impacted or painful wisdom teeth under localized or general anesthesia to secure adjacent jaw alignments.</p>
+                    <h4 class="service-benefits-title">Key Benefits</h4>
+                    <ul class="service-benefits-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Resolves severe jaw pain & headaches</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Minimally invasive surgical sutures</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Protects molar teeth alignments</li>
+                    </ul>
+                    <h4 class="service-benefits-title">Treatment Process</h4>
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <span class="process-number">01</span>
+                            <h5>Ray</h5>
+                            <p>CBCT 3D nerve path mapping</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">02</span>
+                            <h5>Extract</h5>
+                            <p>Painless micro-surgical removal</p>
+                        </div>
+                        <div class="process-step">
+                            <span class="process-number">03</span>
+                            <h5>Close</h5>
+                            <p>Self-dissolving sterile sutures</p>
+                        </div>
+                    </div>
+                    <div class="service-card-footer">
+                        <button onclick="openAppointmentPopup()" class="btn btn-primary" style="padding: 8px 18px; font-size: 13px;">Book Slot</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: var(--bg-white);">
+                    <i class="fa-solid fa-tooth" style="filter: brightness(1.2);"></i> Smile<span>Care</span>
+                </a>
+                <p class="footer-desc">SmileCare Dental Clinic delivers world-class dental procedures and customized care using premium medical technology and specialized procedures.</p>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                    <li><a href="doctors.html"><i class="fa-solid fa-chevron-right"></i> Doctors</a></li>
+                    <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Teeth Cleaning</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Teeth Whitening</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Root Canal</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Dental Implants</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Orthodontic Braces</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p style="margin-bottom: 20px; line-height: 1.6;">Subscribe to our newsletter for health tips and clinic updates.</p>
+                <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                    <input type="email" placeholder="Your Email" required autocomplete="email">
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmileCare Dental Clinic. All rights reserved.</p>
+            <p>Developed with <i class="fa-solid fa-heart" style="color: #ef4444; font-size: 11px;"></i> for health care.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Go to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="whatsapp-float" id="whatsapp-btn" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </div>
+
+    <!-- Global Appointment Popup Modal -->
+    <div class="modal-overlay" id="appointment-popup-modal">
+        <div class="modal-box" style="text-align: left; max-width: 600px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                <h3 style="margin: 0; color: var(--text-dark);"><i class="fa-regular fa-calendar-check" style="color: var(--secondary); margin-right: 8px;"></i> Book An Appointment</h3>
+                <span onclick="closeAppointmentPopup()" style="font-size: 28px; cursor: pointer; color: var(--text-muted); font-weight:300; line-height:1;">&times;</span>
+            </div>
+            <form class="appointment-page-form" id="popupBookingForm" onsubmit="handleBookingSubmit(event, true)">
+                <div class="form-group">
+                    <label for="popup-patientName">Patient Name *</label>
+                    <input type="text" id="popup-patientName" class="form-control" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientEmail">Email Address *</label>
+                    <input type="email" id="popup-patientEmail" class="form-control" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientPhone">Phone Number *</label>
+                    <input type="tel" id="popup-patientPhone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-patientAge">Patient Age *</label>
+                    <input type="number" id="popup-patientAge" class="form-control" placeholder="25" min="1" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-selectDoctor">Select Doctor *</label>
+                    <select id="popup-selectDoctor" class="form-control" required>
+                        <option value="First Available Specialist" selected>First Available Specialist</option>
+                        <option value="Dr. John Smith (Senior Dental Specialist)">Dr. John Smith (Senior Specialist)</option>
+                        <option value="Dr. Sarah Johnson (Senior Orthodontist)">Dr. Sarah Johnson (Orthodontist)</option>
+                        <option value="Dr. Marcus Chen (Implantology Specialist)">Dr. Marcus Chen (Implantologist)</option>
+                        <option value="Dr. Emily Taylor (Cosmetic Dentist)">Dr. Emily Taylor (Cosmetic Dentist)</option>
+                        <option value="Dr. Alex Mercer (Pediatric Specialist)">Dr. Alex Mercer (Pediatric Specialist)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="popup-selectService">Select Treatment *</label>
+                    <select id="popup-selectService" class="form-control" required>
+                        <option value="" disabled selected>Choose a Treatment</option>
+                        <option value="General Dentistry">General Dentistry</option>
+                        <option value="Teeth Cleaning">Teeth Cleaning</option>
+                        <option value="Teeth Whitening">Teeth Whitening</option>
+                        <option value="Root Canal Treatment">Root Canal Treatment</option>
+                        <option value="Dental Implants">Dental Implants</option>
+                        <option value="Braces & Aligners">Braces & Aligners</option>
+                        <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                        <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                        <option value="Gum Treatment">Gum Treatment</option>
+                        <option value="Wisdom Tooth Removal">Wisdom Tooth Removal</option>
+                    </select>
+                </div>
+
+                <div class="form-group form-full">
+                    <label for="popup-appointmentDate">Preferred Appointment Date *</label>
+                    <input type="date" id="popup-appointmentDate" class="form-control" required>
+                </div>
+
+                <div class="form-group form-full">
+                    <label for="popup-patientMessage">Additional Message (Optional)</label>
+                    <textarea id="popup-patientMessage" class="form-control" placeholder="Share any symptoms or requirements with us..."></textarea>
+                </div>
+
+                <div class="form-group form-full" style="margin-top: 10px;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Booking Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Booking Confirmation Modal (Shared Modal) -->
+    <div class="modal-overlay" id="confirm-modal-overlay">
+        <div class="modal-box">
+            <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Appointment Requested!</h3>
+            <p style="margin-bottom: 20px;">Thank you for booking with SmileCare. Here are your details:</p>
+            <div style="text-align: left; background: var(--bg-light); padding: 15px 20px; border-radius: 8px; margin-bottom: 25px; font-size: 13.5px; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 8px;">
+                <p style="margin:0;"><strong>Name:</strong> <span id="confirm-name" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Age:</strong> <span id="confirm-age" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Email:</strong> <span id="confirm-email" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Phone:</strong> <span id="confirm-phone" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Doctor:</strong> <span id="confirm-doctor" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Service:</strong> <span id="confirm-service" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Date:</strong> <span id="confirm-date" style="color: var(--text-dark);"></span></p>
+                <p style="margin:0;"><strong>Notes:</strong> <span id="confirm-message" style="color: var(--text-dark); font-style: italic;"></span></p>
+            </div>
+            <button onclick="closeConfirmModal()" class="btn btn-primary" style="width: 100%;">Got It, Thanks!</button>
+        </div>
+    </div>
+   
+
+    <!-- Script file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
